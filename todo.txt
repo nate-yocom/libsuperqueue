@@ -1,0 +1,11 @@
+[X] Make queue width available as test app
+[ ] Speed up array searches for 'free' jobs/queue-entries with a bitset of open entries?
+[X] Remove allocation of job queue entries - use static array entries?
+[ ] Replace as much locking as possible with atomic exchanges (incr/decr and pointer substitutions)
+[X] Make fire-and forget jobs that clean themselves up
+[X] Add a way to get output from finished jobs (after group sync)
+[X] Add a way to destroy finished jobs
+[X] Change timed waits to be milliseconds in precision
+[X] Better sample with jobs that do work vs throw away, multiple groups etc
+[ ] Add a way to queue jobs (or maybe groups?) for a specific thread, so that app can prioritize/spread according to need/job
+[ ] Add a way to indicate a job should be run many times, but each time with a new input/output pair (callback to get?)
